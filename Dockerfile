@@ -1,2 +1,3 @@
 FROM nginx
-COPY . /usr/share/nginx/html
+RUN apt install git -y
+RUN git clone https://github.com/devopsintellipaat/website/ /usr/share/nginx/html/
